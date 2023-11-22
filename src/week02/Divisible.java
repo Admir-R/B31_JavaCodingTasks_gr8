@@ -3,17 +3,23 @@ package week02;
 public class Divisible {
 
     public static void main(String args[]) {
+
+      divisible(100);
+
+    }
+
+    public static void divisible(int n){
         System.out.println("Divisible by 15");
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0 && i % 15 == 0) {
                 // System.out.println("Divisible by 15");
                 System.out.print(i + ",");// Print numbers divided by 3,5,15
             }
 
         }
-        System.out.println();
+        System.out.println();// this is just for separate the line
         System.out.println("Divisible by 5");
-        for (int j = 1; j < 100; j++) {
+        for (int j = 1; j < n; j++) {
             if (j % 5 == 0 && j % 15 != 0) {
                 System.out.print(j + ",");
             }
@@ -22,7 +28,7 @@ public class Divisible {
 
         System.out.println();
         System.out.println("Divisible by 3");
-        for (int k = 1; k < 100; k++) {
+        for (int k = 1; k < n; k++) {
             if (k % 3 == 0 && k % 15 != 0) {
                 System.out.print(k + ",");
             }
